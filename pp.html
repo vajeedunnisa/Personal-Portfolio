@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="pp.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>    
+            <img src="images/images.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="heading">
+            <p >Hello....!!</p>
+            <h3>Welcome to My Portfolio Website</h3>
+            <h1>I am<span> Mohammad Vajeedunnisa</span> </h1>
+        </div>
+    </div>
+</div>
+<!-----------about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/formpicture-IMG_20210311_183310.jpg">
+            </div>
+            <div class="about-col-2">
+
+                <h1 class="subtitle">About Me</h1>
+                <p class="text">
+                Communication, creative thinking, and organizational skills are
+                among my most valued assets. I would like to use my abilities
+                to fill a role at your company successfully. As a hard-working
+                individual, as well as a team player I can be relied upon to
+                help your company achieve its goals.
+                </p>
+                <div class="tab-titles">
+                
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><b>Python Programming</b></li>
+                        <li><b>HTML</b></li>
+                        <li><b>CSS</b></li>
+                        <li><b>Javascript</b></li>
+                        <li><b>MySQL</b></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li> <b>Web Development and Designing Internship</b>
+                            <p><i>I have completed my Internship as a Web
+                                Developer at Oasis Infobyte.
+                                During this internship,I worked with Web
+                                Technologies - HTML ,CSS and Javascript.</i></p>
+                        </li>    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <b>Bachelor of Technology</b> <br> <span> 2019 - 2023</span>
+                            <p><i>Rajiv Gandhi University of Knowledge and technology - IIIT Ongole s</i></p>
+                            <p><b>CGPA: 8.5 </b></p>
+                        </li>
+                        <li> <b>Pre-University Course</b> <br> <span> 2017 - 2019 </span>
+                            <p><i>Rajiv Gandhi University of Knowledge and technology - IIIT Ongole</i></p>
+                            <p><b>CGPA: 8.4 </b></p>
+                        </li>
+                        <li> <b>SSC</b> <br> <span>2016 - 2017</span>
+                            <p><i>G.D.E.T.M.C.HIGH SCHOOL</i></p>
+                            <p><b>CGPA: 9.7 </b></p>
+                        </li>     
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/256x256bb.jpg">
+                <div class="layer">
+                    <h3><b>Weather App</b></h3>
+                    <p>This is a web application used to detect current weather report for
+                        specified city.
+                    </p>
+                    <a href="" target="_blank"><img src="images/fi-xnluxx-external-link.png"> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/images (1).png">
+                <div class="layer">
+                    <h3><b>Guessing Game</b></h3>
+                    <p>It is a fun game which allows the user to guess the random
+                        number generated in the game.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/bdb66e119fda5d7680bdfdfe911abcb6.png">
+                <div class="layer">
+                    <h3><b>Clock</b></h3>
+                    <p>This clock provides us the current Time.</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/calsi.JPG">
+                <div class="layer">
+                    <h3><b>Calculator</b></h3>
+                    <p>This is a web calculator where we can perform our basic calculations.<br>Click on the link given below to perform calculations.</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!----------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title contact">Contact me</h1>
+                <p class="mail">vajeedunnisa10@gmail.com
+                <br>7997790259</br></p>
+                <a href="images/VResume.pdf" download class="btn btn1">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                        
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzJg1eQlmAkx5_cX-B5rcHy9B5JZbU_NtsNiNtlYxXFw3iGjWRuFZYJgegkHfXp__5vqg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()        
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html> 
