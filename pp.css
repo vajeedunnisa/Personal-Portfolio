@@ -8,8 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #ffa69e;
-    background-image: linear-gradient(315deg, #ffa69e 0%, #5d4954 74%);
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #ff7878 74%);
     color: #fff;
 }
 
@@ -18,12 +18,10 @@ body{
     height: 100vh; 
     background-size: cover;
     background-position: center;
-   
 }   
 
 .container{
     padding: 15px 10%;
-
 }
 
 nav{
@@ -37,8 +35,6 @@ nav{
     width:160px;
     height: 40%;
     border-radius: 50%;
-    text-decoration: overline;
-    text-shadow: #262626;
 
 }
 
@@ -74,32 +70,28 @@ nav ul li a:hover::after{
     margin-top: 18%;
     font-size: 30px;
     color:#fff;
-    
-    
+    font-family: 'Dosis', sans-serif;
+    padding:10px;
 
 }
 
 .heading h1{
-    font-size: 35px;
     color:#fff;
-    font-style: oblique;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 10px;
 }
 
 .heading h1 span{
     color:#020024;
-    font-weight: 800;
-    
+    font-style: italic;
 }
 
-.heading h3{
-    color: bisque;
-}
 
 #about{
     padding: 70px;
-    color:#020024;
+    color: #020024;
     font-size: 20px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'News Cycle', sans-serif;
 }
 
 
